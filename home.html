@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body
+		{
+			background-color: gold;
+		}
+		#rou
+		{
+			color:brown;
+			margin-right: 400px;
+
+		}
+		.ptr1
+		{
+			background-color: tomato;
+			font-family: "Arial";
+			font-size: 20px;
+			color: black;
+		}
+		.ptr2
+		{
+			background-color: palevioletred;
+		}
+		#tig
+		{
+			background-color: blue;
+		}
+		#tie1
+		{
+			background-color: lightseagreen;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<center> 
+		<h1 id="rou"> Student Registration Form </h1>
+</center>
+<form>
+	<center>
+<table class="ptr2" border="1">
+	<tr>
+	<th width="200"> <a href="home.html"> Student</a></th>
+	<th width="200"> <a href="staff.html"> Staff</a></th>
+	<th width="200"> <a href="salary.html"> Salary</a></th>
+	<th width="200"> <a href="library.html"> Library</a></th>
+	<th width="200"> <a href="#"> Logout</a></th>
+</tr>
+</table><br><br>
+
+<table class="ptr1" border="1">
+	<tr><td width="100"><center> <label> Name </label></td></center>
+		<td id="tie1" width="350"><input type="text" name="st_name"></td>
+	<td  width="150" colspan="2"><center><label> Father Name</label></td></center>
+	<td id="tie1" width="400"> <input type="text" name="fa_name"></td>
+</tr>
+
+<tr><td> <center><label> Address1 </label></td></center>
+	<td id="tie1"><textarea rows=5 cols=25></textarea></td>
+	<td colspan="2"><center> <label> Address2 </label></td></center>
+	<td id="tie1"><textarea rows=5 cols=25></textarea></td>
+</tr>
+
+<tr><td> <center><label> DOB </label></td></center>
+	<td id="tie1"> <input type="date" name="_dob"></td>
+	<td colspan="2"><center> <label> Admission date </label></td></center>
+	<td id="tie1"><input type="date" name="_addmi"></td>
+</tr>
+
+<tr><td><center> <label> College </label></td></center>
+		<td id="tie1"><select name="city">
+			<option> Mumabi </option>
+			<option> Nashik</option>
+			<option> Ozar</option>
+			<option> Dhule</option></select></td>
+
+			<td colspan="2"><center> <label> State </label></td></center>
+		<td id="tie1"><select name="State">
+			<option> Maharashtra </option>
+			<option> Aasam</option>
+			<option> Gujrat</option>
+			<option> Rajasthan</option></select></td>
+		</tr>
+
+<tr><td><center> <label> Country </label></td></center>
+		<td id="tie1"><select name="Country">
+			<option> India </option>
+			<option> Auatralia</option>
+			<option> England</option>
+			<option> South Africa</option></select></td>
+
+	<td colspan="2"><center> <label> Nationality </label></td></center>
+		<td id="tie1"><input type="text" name="st_name"></td>
+	</td></td></tr>
+
+<tr><td> <center><label> Gender </label></td></center>
+	<td id="tie1"><input type="radio" name="male">Male
+	<input type="radio" name="city">Female</td>
+
+	<td colspan="2"> <center><label> Qualification </label></td></center>
+	<td id="tie1"><input type="checkbox" name="Sub[]" values="BCA">BCA
+    <input type="checkbox" name="Sub[]" values="MCA">MCA
+    <input type="checkbox" name="Sub[]" values="MA">MA
+    <input type="checkbox" name="Sub[]" values="MBA">MBA</td>
+</tr>
+
+<tr><td><center> <label> Courses </label></td></center>
+		<td id="tie1"><select name="Course">
+			<option> Diploma </option>
+			<option> Pharmasy</option>
+			<option> B tech</option>
+			<option> Designing</option></select></td>
+
+	<td colspan="2"> <center><label> Photo </label></td></center>
+	<td id="tie1"><input type="file" name="photo"></td></tr>
+
+<tr><td> <center><label> Hobbies </label></td></center>
+	<td id="tie1"><textarea rows=5 cols=25></textarea></td>
+
+	<td colspan="2"> <center><label> Mobile </label></td></center>
+	<td id="tie1"><input type="number" name="Mo_no"></td></tr>
+
+<tr><td id="tig" colspan="6"><center> <input style="background-color: forestgreen;" type="submit"></center></td></tr>
+</table>
+</center>
+</form>	
+
+</body>
+</html>

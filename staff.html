@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+		#rou
+		{
+			background-color: orange;
+			color: darkblue;
+		}
+		body
+		{
+			background-color: yellowgreen;
+		}
+		.ptr2
+		{
+			background-color: yellow;
+			color: rebeccapurple;
+			font-family: "Courier";
+		}
+		.tig3
+		{
+			background-color:green;
+		}
+
+	</style>
+	<title></title>
+</head>
+<body>
+<center> 
+		<h1 id="rou"> Staff Registration </h1>
+</center>
+<form>
+	<center>
+<table class="ptr2" border="1">
+	<tr>
+	<th width="200"> <a href="home.html"> Student</a></th>
+	<th width="200"> <a href="staff.html"> Staff</a></th>
+	<th width="200"> <a href="salary.html"> Salary</a></th>
+	<th width="200"> <a href="library.html"> Library</a></th>
+	<th width="200"> <a href="#"> Logout</a></th>
+</tr>
+</table><br><br>
+
+<table border="1">
+	<tr>
+	
+<td class="tig3"><center> <label> FirstName</label></td></center>
+	<td><input type="Text" name="fname"> </td>
+	<td class="tig3" colspan="2" width="200"><center> <label> MiddleName </label></td></center>
+	<td colspan="2"><input type="text" name="mname"> </td>
+ <td class="tig3" width="200"><center><label> LastName </label></td></center>
+	<td colspan="2"><input type="text" name="lname"> </td></tr>
+
+<tr><td class="tig3"> <center><label> Current Address </label></td></center>
+	<td colspan="2"><textarea rows=5 cols=25></textarea></td>
+	<td class="tig3" colspan="2"><center> <label> Permanent Address </label></td></center>
+	<td colspan="5"><textarea rows=5 cols=25></textarea></td>
+</tr>
+
+<tr><td class="tig3"><center> <label> State </label></td></center>
+		<td><select name="state">
+			<option> Maharashtra </option>
+			<option> Gujrat</option>
+			<option> Punjab</option>
+			<option> Zarkhand</option></select></td>
+
+<td class="tig3" colspan="2"><center> <label> District </label></td></center>
+		<td><select name="District">
+			<option> Mumbai </option>
+			<option> Nashik</option>
+			<option> Jalgaon</option>
+			<option> Dhule</option></select></td>
+
+<td class="tig3" colspan="2"><center> <label> City </label></td></center>
+		<td><select name="District">
+			<option> Thane </option>
+			<option> Nashik</option>
+			<option> Malegaon</option>
+			<option> Taloda</option></select></td>
+	</tr>
+
+<tr><td class="tig3"> <center><label> Gender </label></td></center>
+	<td><input type="radio" name="male">Male
+	<input type="radio" name="city">Female</td>
+
+<td class="tig3" colspan="2"><center><label> Nationality </label></center></td>
+   <td><input type="text"></td>
+
+<td class="tig3" colspan="2"> <center><label> Photo</label></center></td>
+<td><input type="file"></td>
+</tr>
+
+<tr><td class="tig3"><center><label> Mobile No. </label></td></center>
+	<td><input type="number" name="Mo_no"></td>
+
+	<td class="tig3"> <center><label> Caste </label></td></center>
+	        <td colspan="2"><select name="caste">
+	        <option> OBC</option>
+			<option> OPEN</option>
+			<option> NT</option>
+			<option> SC</option></select></td>
+
+			<td class="tig3" colspan="2"> <center><label> Sub caste </label></td></center>
+	        <td colspan="2"><select name="subc">
+	        <option> Wani </option>
+			<option> Patil</option>
+			<option> Gurav</option>
+			<option> Mali</option></select></td>
+		</tr>
+
+<tr><td class="tig3"> <center><label> Religion </label></td></center>
+	        <td colspan="2"><select name="Religion">
+	        <option> Hindu </option>
+			<option> Muslim</option>
+			<option> Shik</option>
+			<option> Christan</option></select></td>
+
+<td class="tig3" colspan="2"><center><label> Hobbies </label></td></center>
+	<td colspan="5"><input type="text" name="lname"> </td></tr>
+</tr>
+
+<tr><td class="tig3"> <center><label>Joining Date </label></td></center>
+	<td colspan="2"> <input type="date" name="jod"></td>
+	<td class="tig3" colspan="2"><center> <label> Date of Birth </label></td></center>
+	<td colspan="5"><input type="date" name="dob"></td>
+</tr>
+
+<tr><td class="tig3"> <center><label> Qualification </label></td></center>
+	<td ><input type="checkbox" name="Sub[]" values="10th">10th
+    <input type="checkbox" name="Sub[]" values="12th">12th
+    <input type="checkbox" name="Sub[]" values="Diploma">Diploma
+    <input type="checkbox" name="Sub[]" values="BE">BE
+    <input type="checkbox" name="Sub[]" values="ME">ME</td>
+
+ <td class="tig3" colspan="2"><center><label> Salary </label></center></td>
+ <td colspan="2"><input type="text" name="sal"></td>
+
+ <td class="tig3"><center><label> Last College Information </label></center></td>
+ <td><input type="text" name="sal"></td>
+<tr><td style="background-color: thistle;" colspan="12"><center> <input style="background-color: steelblue;" type="submit"></center></td></tr>
+</table>
+</center>
+</form>
+
+</body>
+</html>

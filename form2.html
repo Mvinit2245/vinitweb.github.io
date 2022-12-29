@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function validateForm() 
+		{
+			var x = document.forms["myform"]["stu_name"].value;
+
+			if (x == "")
+			{
+				alert("Please enter correct data");
+				return false;
+			}
+
+			var x1 = document.forms["myform"]["st_email"].value;
+
+			if (x1 == "")
+			{
+				alert("Please enter correct email id");
+				return false;
+			}
+
+			var x2 = document.forms["myform"]["st_dob"].value;
+
+			if (x2 == "")
+			{
+				alert("Please enter correct Date Of Birth");
+				return false;
+			}
+
+			var x3 = document.forms["myform"]["st_con"].value;
+
+			if (x3 == "")
+			{
+				alert("Please enter correct contact No");
+				return false;
+			}
+		}
+	</script>
+	<title></title>
+</head>
+<body>
+  
+  <form method="post" onsubmit="return validateForm()" name="myform">
+  	     <h2> Registration Form </h2>  
+     <label>Name</label>
+     <input type="text" name="s_name" placeholder="enter your name" id="stu_name"><br> <br>
+     <label>Email </label>
+     <input type="email" name="E_mail" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" placeholder="Enter your mail id" id="st_email"><br> <br>
+      <label>DOB</label>
+     <input type="date" name="dob" placeholder="Enter your DOB" id="st_dob"><br> <br>
+      <label>Contact No </label>
+     <input type="number" name="con" placeholder="Enter your contact no" id="st_con"><br> <br>
+
+     <input type="submit" name="sub_we" value="submit">
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+
+<table cellpadding ="10" border="1">
+	<tr> <td  colspan="2" width="150"><b> Level</b> </td>
+		<td width="900" colspan="4"><b> OutboundPayment </b> </td>
+	<tr> <td colspan="2" > <b>Sort Ascending</b> </td>
+		<td colspan="4"> <b>Payee/Name</b> </td></tr>
+	<tr> <td><b> Position</b> </td>
+		<td> <b>length</b> </td>
+		<td width="150"><b> Format </b></td>
+		<td><b> PAD </b></td>
+		<td width="450"><b> Date</b> </td>
+		<td> <b>Comment </b></td></tr>
+
+	<tr> <td colspan="2"><b> New Record</b> </td>
+		<td colspan="4"><b> Entry_Detail_CR</b> </td></tr>
+
+	<tr><td> 1 </td>
+		<td> 2 </td>
+		<td> Number </td>
+		<td> L,'0'</td>
+		<td> 6</td>
+		<td> Record Type</td></tr>	
+
+	<tr><td> 2 </td>
+		<td> 2 </td>
+		<td> Alpha </td>
+		<td>R,''</td>
+		<td>DECODE(PaymentAmount/Value,0,'23','22'</td>
+		<td> Transaction  </td></tr>	
+
+	<tr><td> 4 </td>
+		<td> 9 </td>
+		<td> Number </td>
+		<td> L,'0'</td>
+		<td> PayeeBankAccount/BranchNumber </td>
+		<td> Receiving </td></tr>	
+    <tr><td> 13 </td>
+		<td> 17</td>
+		<td> Alpha </td>
+		<td> R,''</td>
+		<td> PayeeBankAccount/BranchNumber  </td>
+		<td> DFI Account </td></tr>	
+    <tr><td> 30</td>
+		<td> 10</td>
+		<td> Number,Integer </td>
+		<td> L,'0'</td>
+		<td> PaymentBankAccount/Value*100 </td>
+		<td> Amount </td></tr>	
+    <tr><td> 40 </td>
+		<td> 15</td>
+		<td> Alpha </td>
+		<td> R,''</td>
+		<td>PaymentBankAccount/PaymentReferenceNumber  </td>
+		<td> Identification </td></tr>	
+    <tr><td> 55 </td>
+		<td> 22</td>
+		<td> Alpha </td>
+		<td> R,''</td>
+		<td>NVL(Payee/AlternateName,Payee/Name) </td>
+		<td> Receiving Number </td></tr>	
+
+
+
+
+
+
+
+
+</table>
+
+
+</body>
+</html>
